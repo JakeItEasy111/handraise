@@ -277,7 +277,7 @@ class StreamSessionUI(QFrame):
     def add_message_to_list(self, msg):
         frame = signalFrame(msg) 
         self.signals_layout.addWidget(frame)
-        self.signals_layout.setAlignment(Qt.AlignCenter)
+        self.signals_layout.setAlignment(Qt.AlignHCenter | Qt.AlignTop)
 
 class signalFrame(QFrame):
     def __init__(self, msg):
